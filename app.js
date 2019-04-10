@@ -1,12 +1,12 @@
 const initialRainDrops = ['initial-big-drop', 'initial-medium-drop', 'initial-small-drop', 'initial-extra-small-drop'];
 const rainDrops = ['big-drop', 'medium-drop', 'small-drop', 'extra-small-drop'];
 const projectPages = {
-	'p1' : 'http://to-do-list-app-js.s3-website.ap-south-1.amazonaws.com',
-	'p2' : 'http://the-newsapp.s3-website.ap-south-1.amazonaws.com',
-	'p3' : 'http://blogs-rishabh.s3-website.ap-south-1.amazonaws.com',
-	'p4' : 'about:blank',
-	'p5' : 'https://github.com/rishuSehrawat/Pig-Game',
-	'p6' : 'about:blank'
+	'p1': 'http://to-do-list-app-js.s3-website.ap-south-1.amazonaws.com',
+	'p2': 'http://the-newsapp.s3-website.ap-south-1.amazonaws.com',
+	'p3': 'http://blogs-rishabh.s3-website.ap-south-1.amazonaws.com',
+	'p4': 'about:blank',
+	'p5': 'https://github.com/rishuSehrawat/Pig-Game',
+	'p6': 'about:blank'
 }
 const wrapper = document.querySelector('.wrapper');
 const circle = document.querySelector('.circle');

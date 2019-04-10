@@ -120,11 +120,12 @@ body{
 
 @keyframes growCircle{
     to{
-        transform: scale(17);
+        transform: scale(26);
     }
 }
 
 .contact-me-container{
+    display: block;
     position: fixed;
     right: 0;
     top: 50%;
@@ -154,7 +155,8 @@ body{
     width: 200px;
     height: 200px;
     border-radius: 50%;
-    background: linear-gradient(0deg, rgba(46,46,57,1) 0%, rgba(19,19,23,1) 85%, rgba(19,19,23,1) 100%);;
+    background: linear-gradient(0deg, rgba(46,46,57,1) 0%,
+     rgba(19,19,23,1) 85%, rgba(19,19,23,1) 100%);;
     position: absolute;
     top: 0;
     left: 50%;
@@ -376,7 +378,6 @@ body{
     color: white;
 }
 
-
 footer{
     text-align: center;
     background: #26252C;
@@ -395,4 +396,44 @@ footer a{
     margin: 0px 20px;
     color: white;
     opacity: 0.7;
+}
+
+.project-text{
+    display: none;
+}
+
+@media only screen and (max-width: 768px) {
+    .contact-me-container{
+        display: none;
+    }
+    .text-area-text{
+        font-size: 20px;
+    }
+    .text-area img{
+        width: 50px;
+    }
+    .inner-container {
+        width: 90vw;
+        margin: 50px auto;
+    }
+    .skills-wrapper{
+        width:100%;
+    }
+    .outer-loading-bar{
+        width: 100%;
+    }
+    .project{
+        width: 100%;
+        margin: 20px 0;
+    }
+    .project-text{
+        display: block;
+    }
+    footer{
+        font-size: 20px;
+    }
+    footer a{
+        margin: 0px 10px;
+        font-size: 24px;
+    }
 }
