@@ -184,6 +184,19 @@ body{
     border-radius: 50%;
 }
 
+.text-area-text button{
+    width: 150px;
+    height: 40px;
+    background: #24232A;
+    border: 1px solid #EB006B;
+    color: #EB006B;
+    cursor: pointer;
+}
+
+.text-area-text button:focus{
+    outline: none;
+}
+
 .second-section{
     width: 100vw;
     font-family: 'Raleway', sans-serif;
