@@ -1,0 +1,398 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+body{
+    overflow-x: hidden;
+    margin: 0;
+}
+
+.wrapper{
+    overflow: hidden;
+    transform: rotate(-27.142deg) translate(7%,-18%);
+    position: relative;
+}
+
+.big-drop{
+    width: 5px;
+    height: 100px;
+    background: white;
+    opacity: 0.4;
+    border-radius: 25%;
+    position: absolute;
+    top: -110px;
+    animation: animate 11s forwards linear;
+    animation-delay: 10ms;
+}
+
+.initial-big-drop{
+    width: 5px;
+    height: 100px;
+    background: white;
+    opacity: 0.4;
+    border-radius: 25%;
+    position: absolute;
+    animation: initial-animate 11s forwards linear;
+    animation-delay: 10ms;
+}
+
+.medium-drop{
+    width: 3px;
+    height: 60px;
+    background: white;
+    opacity: 0.4;
+    border-radius: 25%;
+    position: absolute;
+    top: -110px;
+    animation: animate 19s forwards linear;
+    animation-delay: 300ms;
+}
+
+.initial-medium-drop{
+    width: 3px;
+    height: 60px;
+    background: white;
+    opacity: 0.4;
+    border-radius: 25%;
+    position: absolute;
+    animation: initial-animate 19s forwards linear;
+    animation-delay: 300ms;
+}
+
+.small-drop{
+    width: 1px;
+    height: 20px;
+    background: white;
+    opacity: 0.4;
+    border-radius: 25%;
+    position: absolute;
+    top: -110px;
+    animation: animate 25s forwards linear;
+    animation-delay: 300ms;
+}
+
+.initial-small-drop{
+    width: 1px;
+    height: 20px;
+    background: white;
+    opacity: 0.4;
+    border-radius: 25%;
+    position: absolute;
+    animation: initial-animate 25s forwards linear;
+    animation-delay: 300ms;
+}
+
+.extra-small-drop{
+    width: 1px;
+    height: 3px;
+    background: white;
+    opacity: 0.4;
+    border-radius: 25%;
+    position: absolute;
+    top: -110px;
+    animation: animate 35s forwards linear;
+    animation-delay: 300ms;
+}
+
+.initial-extra-small-drop{
+    width: 1px;
+    height: 3px;
+    background: white;
+    opacity: 0.4;
+    border-radius: 25%;
+    position: absolute;
+    animation: initial-animate 35s forwards linear;
+    animation-delay: 300ms;
+}
+
+@keyframes initial-animate{
+    to{
+        top: 100%;
+    }
+}
+
+@keyframes animate {
+    from{
+        top: -110px;
+    }
+    to{
+        top: 100%;
+    }
+}
+
+@keyframes growCircle{
+    to{
+        transform: scale(17);
+    }
+}
+
+.contact-me-container{
+    position: fixed;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 4;
+}
+
+.contact-me-container a{
+    display: block;
+    color: #EB006B;
+    font-size: 2rem;
+    margin: 20px 20px;
+}
+
+.contact-me-container a:hover{
+    opacity: 0.7;
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+
+.circle{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: linear-gradient(0deg, rgba(46,46,57,1) 0%, rgba(19,19,23,1) 85%, rgba(19,19,23,1) 100%);;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    z-index: -1;
+    animation: growCircle 2s forwards;
+}
+
+.text-area{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: white;
+    font-size: 3rem;
+    z-index: 1;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 10px;
+    width: 100vw;
+}
+
+.text-area img{
+    width: 100px;
+    border-radius: 50%;
+}
+
+.second-section{
+    width: 100vw;
+    font-family: 'Raleway', sans-serif;
+}
+
+.inner-container{
+    width: 60vw;
+    margin: 90px auto;
+}
+
+.inner-container h1{
+    letter-spacing: 2px;
+    word-spacing: 4px;
+    line-height: 40px;
+}
+
+.inner-container p{
+    letter-spacing: 2px;
+    word-spacing: 4px;
+    line-height: 40px;
+}
+
+.skills-wrapper{
+    width: 70%;
+    margin: 0 auto;
+}
+
+.skills-loading-bar{
+    margin: 40px 0;
+    width: 100%;
+}
+
+.skill-name{
+    width: 100px;
+    display: inline-block;
+    letter-spacing: 2px;
+    word-spacing: 4px;
+}
+
+.outer-loading-bar{
+    width: 80%;
+    height: 10px;
+    display: inline-block;
+    background: lightgrey;
+    border-radius: 10px;
+}
+
+.inner-bar{
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
+    background: #EB006B;
+}
+
+.one{
+    animation: loading-bar-1 1s forwards;
+}
+
+.two{
+    animation: loading-bar-2 1s forwards;
+}
+
+.three{
+    animation: loading-bar-3 1s forwards;
+}
+
+.four{
+    animation: loading-bar-4 1s forwards;
+}
+
+.five{
+    animation: loading-bar-5 1s forwards;
+}
+
+@keyframes loading-bar-1{
+    to{
+        border-radius: 10px;
+        width: 90%;
+    }
+}
+
+@keyframes loading-bar-2{
+    to{
+        border-radius: 10px;
+        width: 80%;
+    }
+}
+
+@keyframes loading-bar-3{
+    to{
+        border-radius: 10px;
+        width: 85%;
+    }
+}
+
+@keyframes loading-bar-4{
+    to{
+        border-radius: 10px;
+        width: 80%;
+    }
+}
+
+@keyframes loading-bar-5{
+    to{
+        border-radius: 10px;
+        width: 60%;
+    }
+}
+
+.project-container{
+    width: 80vw !important;
+}
+
+.project-wrapper{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 23px;
+}
+
+.project{
+    width: 32%;
+    text-align: center;
+    position: relative;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.project:hover{
+    transition: 0.2s;
+    transform: scale(1.2);
+    box-shadow: 0px 0px 7px 0px black;
+    z-index: 1;
+}
+
+.project:hover .project-inner-text{
+    display: block;
+}
+
+.project img{
+    width: 100%;
+    display: block;
+}
+
+.project-inner-text{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(38, 36, 44,0.5);
+    display: none;
+    color: white;
+}
+
+.project-data{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-shadow: 0px 0px 18px black;
+    font-weight: 300;
+    letter-spacing: 3px;
+}
+
+.find-more-link{
+    text-decoration: none;
+}
+
+.find-more-btn:focus{
+    outline: 0;
+}
+
+
+.find-more-btn{
+    display: block;
+    margin: 50px auto;
+    border: 3px solid  #24232A;
+    border-radius: 10px;
+    background: white;
+    width: 230px;
+    height: 35px;
+    color: black;
+    cursor: pointer;
+    transition: 0.2s;
+    font-weight: bold;
+}
+
+.find-more-btn:hover{
+    background: #24232A;
+    color: white;
+}
+
+
+footer{
+    text-align: center;
+    background: #26252C;
+    color: white;
+    font-size: 1.3rem;
+    font-family: 'Raleway', sans-serif;
+    padding: 30px 0;
+}
+
+.footer-contacts{
+    margin: 40px auto;
+}
+
+footer a{
+    font-size: 2rem;
+    margin: 0px 20px;
+    color: white;
+    opacity: 0.7;
+}
