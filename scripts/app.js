@@ -4,9 +4,9 @@ const projectPages = {
 	'p1': 'http://to-do-list-app-js.s3-website.ap-south-1.amazonaws.com',
 	'p2': 'http://the-newsapp.s3-website.ap-south-1.amazonaws.com',
 	'p3': 'http://blogs-rishabh.s3-website.ap-south-1.amazonaws.com',
-	'p4': 'about:blank',
+	'p4': 'https://github.com/rishuSehrawat/Website-Template',
 	'p5': 'https://github.com/rishuSehrawat/Pig-Game',
-	'p6': 'about:blank'
+	'p6': 'http://rishusehrawat.github.io'
 }
 const wrapper = document.querySelector('.wrapper');
 const circle = document.querySelector('.circle');
