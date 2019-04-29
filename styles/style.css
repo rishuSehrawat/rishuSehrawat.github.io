@@ -7,7 +7,9 @@ body{
 
 .wrapper{
     overflow: hidden;
-    transform: rotate(-27.142deg) translate(7%,-18%);
+    -webkit-transform: rotate(-27.142deg) translate(7%,-18%);
+        -ms-transform: rotate(-27.142deg) translate(7%,-18%);
+            transform: rotate(-27.142deg) translate(7%,-18%);
     position: relative;
 }
 
@@ -19,8 +21,10 @@ body{
     border-radius: 25%;
     position: absolute;
     top: -110px;
-    animation: animate 11s forwards linear;
-    animation-delay: 10ms;
+    -webkit-animation: animate 11s forwards linear;
+            animation: animate 11s forwards linear;
+    -webkit-animation-delay: 10ms;
+            animation-delay: 10ms;
 }
 
 .initial-big-drop{
@@ -30,8 +34,10 @@ body{
     opacity: 0.4;
     border-radius: 25%;
     position: absolute;
-    animation: initial-animate 11s forwards linear;
-    animation-delay: 10ms;
+    -webkit-animation: initial-animate 11s forwards linear;
+            animation: initial-animate 11s forwards linear;
+    -webkit-animation-delay: 10ms;
+            animation-delay: 10ms;
 }
 
 .medium-drop{
@@ -42,8 +48,10 @@ body{
     border-radius: 25%;
     position: absolute;
     top: -110px;
-    animation: animate 19s forwards linear;
-    animation-delay: 300ms;
+    -webkit-animation: animate 19s forwards linear;
+            animation: animate 19s forwards linear;
+    -webkit-animation-delay: 300ms;
+            animation-delay: 300ms;
 }
 
 .initial-medium-drop{
@@ -53,8 +61,10 @@ body{
     opacity: 0.4;
     border-radius: 25%;
     position: absolute;
-    animation: initial-animate 19s forwards linear;
-    animation-delay: 300ms;
+    -webkit-animation: initial-animate 19s forwards linear;
+            animation: initial-animate 19s forwards linear;
+    -webkit-animation-delay: 300ms;
+            animation-delay: 300ms;
 }
 
 .small-drop{
@@ -65,8 +75,10 @@ body{
     border-radius: 25%;
     position: absolute;
     top: -110px;
-    animation: animate 25s forwards linear;
-    animation-delay: 300ms;
+    -webkit-animation: animate 25s forwards linear;
+            animation: animate 25s forwards linear;
+    -webkit-animation-delay: 300ms;
+            animation-delay: 300ms;
 }
 
 .initial-small-drop{
@@ -76,8 +88,10 @@ body{
     opacity: 0.4;
     border-radius: 25%;
     position: absolute;
-    animation: initial-animate 25s forwards linear;
-    animation-delay: 300ms;
+    -webkit-animation: initial-animate 25s forwards linear;
+            animation: initial-animate 25s forwards linear;
+    -webkit-animation-delay: 300ms;
+            animation-delay: 300ms;
 }
 
 .extra-small-drop{
@@ -88,8 +102,10 @@ body{
     border-radius: 25%;
     position: absolute;
     top: -110px;
-    animation: animate 35s forwards linear;
-    animation-delay: 300ms;
+    -webkit-animation: animate 35s forwards linear;
+            animation: animate 35s forwards linear;
+    -webkit-animation-delay: 300ms;
+            animation-delay: 300ms;
 }
 
 .initial-extra-small-drop{
@@ -99,11 +115,28 @@ body{
     opacity: 0.4;
     border-radius: 25%;
     position: absolute;
-    animation: initial-animate 35s forwards linear;
-    animation-delay: 300ms;
+    -webkit-animation: initial-animate 35s forwards linear;
+            animation: initial-animate 35s forwards linear;
+    -webkit-animation-delay: 300ms;
+            animation-delay: 300ms;
+}
+
+@-webkit-keyframes initial-animate{
+    to{
+        top: 100%;
+    }
 }
 
 @keyframes initial-animate{
+    to{
+        top: 100%;
+    }
+}
+
+@-webkit-keyframes animate {
+    from{
+        top: -110px;
+    }
     to{
         top: 100%;
     }
@@ -118,9 +151,17 @@ body{
     }
 }
 
+@-webkit-keyframes growCircle{
+    to{
+        -webkit-transform: scale(26);
+                transform: scale(26);
+    }
+}
+
 @keyframes growCircle{
     to{
-        transform: scale(26);
+        -webkit-transform: scale(26);
+                transform: scale(26);
     }
 }
 
@@ -129,7 +170,9 @@ body{
     position: fixed;
     right: 0;
     top: 50%;
-    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
     z-index: 4;
 }
 
@@ -155,20 +198,29 @@ body{
     width: 200px;
     height: 200px;
     border-radius: 50%;
+    background: -webkit-gradient(linear, left bottom, left top, from(rgba(46,46,57,1)),
+     color-stop(85%, rgba(19,19,23,1)), to(rgba(19,19,23,1)));
+    background: -webkit-linear-gradient(bottom, rgba(46,46,57,1) 0%,
+     rgba(19,19,23,1) 85%, rgba(19,19,23,1) 100%);
+    background: -o-linear-gradient(bottom, rgba(46,46,57,1) 0%,
+     rgba(19,19,23,1) 85%, rgba(19,19,23,1) 100%);
     background: linear-gradient(0deg, rgba(46,46,57,1) 0%,
      rgba(19,19,23,1) 85%, rgba(19,19,23,1) 100%);;
     position: absolute;
     top: 0;
     left: 50%;
     z-index: -1;
-    animation: growCircle 2s forwards;
+    -webkit-animation: growCircle 2s forwards;
+            animation: growCircle 2s forwards;
 }
 
 .text-area{
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+        -ms-transform: translate(-50%,-50%);
+            transform: translate(-50%,-50%);
     color: white;
     font-size: 3rem;
     z-index: 1;
@@ -252,29 +304,48 @@ body{
 }
 
 .one{
-    animation: loading-bar-1 1s forwards;
+    -webkit-animation: loading-bar-1 1s forwards;
+            animation: loading-bar-1 1s forwards;
 }
 
 .two{
-    animation: loading-bar-2 1s forwards;
+    -webkit-animation: loading-bar-2 1s forwards;
+            animation: loading-bar-2 1s forwards;
 }
 
 .three{
-    animation: loading-bar-3 1s forwards;
+    -webkit-animation: loading-bar-3 1s forwards;
+            animation: loading-bar-3 1s forwards;
 }
 
 .four{
-    animation: loading-bar-4 1s forwards;
+    -webkit-animation: loading-bar-4 1s forwards;
+            animation: loading-bar-4 1s forwards;
 }
 
 .five{
-    animation: loading-bar-5 1s forwards;
+    -webkit-animation: loading-bar-5 1s forwards;
+            animation: loading-bar-5 1s forwards;
+}
+
+@-webkit-keyframes loading-bar-1{
+    to{
+        border-radius: 10px;
+        width: 90%;
+    }
 }
 
 @keyframes loading-bar-1{
     to{
         border-radius: 10px;
         width: 90%;
+    }
+}
+
+@-webkit-keyframes loading-bar-2{
+    to{
+        border-radius: 10px;
+        width: 80%;
     }
 }
 
@@ -285,6 +356,13 @@ body{
     }
 }
 
+@-webkit-keyframes loading-bar-3{
+    to{
+        border-radius: 10px;
+        width: 85%;
+    }
+}
+
 @keyframes loading-bar-3{
     to{
         border-radius: 10px;
@@ -292,10 +370,24 @@ body{
     }
 }
 
+@-webkit-keyframes loading-bar-4{
+    to{
+        border-radius: 10px;
+        width: 80%;
+    }
+}
+
 @keyframes loading-bar-4{
     to{
         border-radius: 10px;
         width: 80%;
+    }
+}
+
+@-webkit-keyframes loading-bar-5{
+    to{
+        border-radius: 10px;
+        width: 60%;
     }
 }
 
@@ -311,10 +403,18 @@ body{
 }
 
 .project-wrapper{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     margin-bottom: 23px;
 }
 
@@ -322,14 +422,21 @@ body{
     width: 32%;
     text-align: center;
     position: relative;
+    -webkit-transition: 0.2s;
+    -o-transition: 0.2s;
     transition: 0.2s;
     cursor: pointer;
 }
 
 .project:hover{
+    -webkit-transition: 0.2s;
+    -o-transition: 0.2s;
     transition: 0.2s;
-    transform: scale(1.2);
-    box-shadow: 0px 0px 7px 0px black;
+    -webkit-transform: scale(1.2);
+        -ms-transform: scale(1.2);
+            transform: scale(1.2);
+    -webkit-box-shadow: 0px 0px 7px 0px black;
+            box-shadow: 0px 0px 7px 0px black;
     z-index: 1;
 }
 
@@ -357,7 +464,9 @@ body{
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+        -ms-transform: translate(-50%,-50%);
+            transform: translate(-50%,-50%);
     text-shadow: 0px 0px 18px black;
     font-weight: 300;
     letter-spacing: 3px;
@@ -382,6 +491,8 @@ body{
     height: 35px;
     color: black;
     cursor: pointer;
+    -webkit-transition: 0.2s;
+    -o-transition: 0.2s;
     transition: 0.2s;
     font-weight: bold;
 }
